@@ -1,0 +1,12 @@
+iot:
+  host: 123.57.241.35
+server:
+  port: 9100
+emqx:
+  broker: tcp://${iot.host}:1883 #broker地址
+  userName: root #授权账号 一定要授权的
+  password: root #密码
+  cleanSession: true #是否清除会话
+  reconnect: true #是否断线重连
+  timeout: 20 #连接超时时间
+  keepAlive: 10 #心跳间隔
